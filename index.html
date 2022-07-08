@@ -8,9 +8,10 @@
     <title>Zuri Media Queries Task</title>
 </head>
 <body>
+    
     <div class="container">
       
-           <form> 
+           <form onsubmit="return validate()"> 
         
     <header>
         <button class="top-btn">
@@ -29,13 +30,21 @@
         <main>
             
      <section class="form-field">
-<input type="text" value="Jonathan" id="firstname" required=""><br>
-<input type="text" placeholder="Last name" id="lastname" required><br>
-<input type="email" placeholder="Email Address" id="email" required><br>
-<input type="password" placeholder="password" id="password" required>
+<input type="text" name="firstname" id="fname" placeholder="Jonathan">
+<br>
+<div id="error1"></div>
+<input type="text" name="lastname" placeholder="Last name" id="lname">
+<br>
+<div id="error2"></div>
+<input type="email" name="email"  placeholder="email@example/com" id="email">
+<br>
+<div id="error3"></div>
+<input type="password" name="password" placeholder="password" id="password">
+<div id="error4"></div>
+
 </section>
 <section>
- <button class="bottom-btn">CLAIM YOUR FREE TRIAL</button>
+ <button type="submit" class="bottom-btn">CLAIM YOUR FREE TRIAL</button>
 </section>
 
 <section>
@@ -48,5 +57,7 @@
 </div>
 </form>
 </div>
+<script src="script.js" defer>
+</script>
 </body>
 </html>
