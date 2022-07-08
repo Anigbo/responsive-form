@@ -3,7 +3,7 @@ function validate() {
     let error1 = document.getElementById("error1")
      let lname = document.getElementById("lname").value
     let error2 = document.getElementById("error2")
-    let password = document.getElementById("password").value
+    let pword = document.getElementById("pword").value
     let error3 = document.getElementById("error3")
     let email = document.getElementById("email").value
     let error4 = document.getElementById("error4")
@@ -25,10 +25,10 @@ function validate() {
     document.getElementById("email").style.backgroundOrigin = "content-box"
     
 
-    document.getElementById("password").style.backgroundImage = "url(https://res.cloudinary.com/dwomgx0nz/image/upload/v1655225239/icon-error_r0k1t8.svg)"
-    document.getElementById("password").style.backgroundRepeat = "no-repeat"
-    document.getElementById("password").style.backgroundPosition = "right center"
-    document.getElementById("password").style.backgroundOrigin = "content-box"
+    document.getElementById("pword").style.backgroundImage = "url(https://res.cloudinary.com/dwomgx0nz/image/upload/v1655225239/icon-error_r0k1t8.svg)"
+    document.getElementById("pword").style.backgroundRepeat = "no-repeat"
+    document.getElementById("pword").style.backgroundPosition = "right center"
+    document.getElementById("pword").style.backgroundOrigin = "content-box"
     
 
   
@@ -65,13 +65,13 @@ function validate() {
     //return false
   }
   
-  if(password.length == "") {
+  if(pword.length == "") {
     error4.textContent = "password cannot be empty"
     return false
   }
   
   else {
-    error4.textContent = ""
+    error4.textContent 
    return false
   }
  
