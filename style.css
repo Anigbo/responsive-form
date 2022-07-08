@@ -91,14 +91,32 @@ main input {
   
       
 }
-input:required:hover {
-  border: 3px solid red;
+input:hover {
+  border: 1.5px solid red;
   
-}
-input:required:active {
 
-border-color: red;
 }
+ input:active, input:focus {
+  outline: none;
+  border: 1px solid red;
+ /* background-image: url("https://res.cloudinary.com/dwomgx0nz/image/upload/v1655225239/icon-error_r0k1t8.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-origin: content-box;*/
+
+}
+ #email:focus::placeholder {
+  color: red
+}
+
+
+ #error1, #error2, #error3, #error4 {
+  color: red;
+  font-size: 10px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 20px;
+ }
 .form-field {
    margin: 10px;
 }
@@ -182,12 +200,3 @@ footer {
 }
 }
 
-@media print  {
-.container {background-image: url("https://res.cloudinary.com/dwomgx0nz/image/upload/v1655225239/favicon-32x32_kl09lr.png")  !important;
-  background-color: red;
-}
-main{
-  margin-right: 100px;
-
-}
-}
